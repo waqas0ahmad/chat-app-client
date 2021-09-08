@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from '../service/api.service';
 import { AccountService } from './account.service';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
     AccountLayoutComponent,
@@ -28,7 +29,8 @@ import { AccountService } from './account.service';
     MatTabsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatGridListModule
+    MatGridListModule,
+    MatSnackBarModule
   ],
   providers:[ApiService,AccountService]
 })

@@ -1,15 +1,15 @@
 export class LoginRequest{
-    Phonenumber:string;
+    Number:string;
     Password:string;
     constructor(){
-        this.Phonenumber = "";
+        this.Number = "";
         this.Password = "";
     }
 }
 export class SignupRequest extends LoginRequest{
-    Fullname:string;
+    Name:string;
     constructor(){
         super();
-        this.Fullname = "";
+        this.Name = "";
     }
 }

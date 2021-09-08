@@ -10,7 +10,7 @@ export class ApiService {
   public getRequest(url:string){
     return this.http.get(this.apiUrl+url);
   }
-  public postRequest(url:string,data:any){
-    return this.http.post(this.apiUrl+url,data);
+  public postRequest<T>(url:string,data:any){
+    return this.http.post<T>(this.apiUrl+url,data);
   }
 }

@@ -1,0 +1,102 @@
+.main{
+    .green-top{
+        height: 127px;
+        background: #128c7e;
+        top: 0;
+        z-index: 0;
+    }
+    background-color: #D4DBD9;
+    padding: 15px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        box-shadow: 0px 1px 11px #00000057;
+        z-index: 1;
+        padding: 0;
+        min-width: 80%;
+        height: 100%;
+        background-color: white;
+        .chat-container{
+            height: 100%;
+            .chat-list{
+                width: 25%;
+                min-height: 100%;
+                .my-info{
+                    background-color: #EDEDED;
+                    height: 60px;
+                    .left{
+                        img{
+                            height: 40px;
+                            width: 40px;
+                        }
+                    }
+                }
+                .search-box{
+                    height: 50px;
+                    background-color: #F6F6F6;
+                    padding: 15px 20px;
+                    div{
+                        input[type='text']{
+                            height: 35px;
+                            border-radius: 30px;
+                            border: none;
+                            padding-left: 40px;
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+                .user-list{
+                    height: calc(100% - 110px);
+                    overflow: auto;
+                    .user{
+                        height: 72px;
+                        .profile{
+                            height: 100%;
+                            padding: 10px;
+                            width: auto;
+                            img{
+                                height: 100%;
+                            }
+                        }
+                    }
+                    div.info{
+                        border-bottom: 1px solid #f2f2f2;
+                        .user-detail{
+                            flex:1;
+                            .name{
+                                font-size: 18px;
+                                font-weight: 400;
+                            }
+                            .last-msg{
+                                font-size: 12px;
+                                color: gray;
+                            }
+                        }
+                    }
+                }
+            }
+            .chat{
+                flex: 1;
+                min-height: 100%;
+                .user-info{
+                    height: 60px;
+                    background-color: #EDEDED;
+                    border-left: 1px solid #DADADA;
+                }
+                .user-chat{
+                    flex: 1;
+                    min-width: 100%;
+                    background: #ECE5DD;
+                }
+                .chat-input{
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
